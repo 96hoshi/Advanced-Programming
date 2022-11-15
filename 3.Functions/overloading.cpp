@@ -4,41 +4,41 @@
 
 
 void print_vector(const std::vector<int> &v) {
-  std::cout << " [ ";
-  for (const auto &elem : v) {
-    std::cout << elem << " ";
-  }
-  std::cout << "]" << std::endl;
+    std::cout << " [ ";
+    for (const auto &elem : v) {
+        std::cout << elem << " ";
+    }
+    std::cout << "]" << std::endl;
 }
 
 void print_matrix(const std::vector<std::vector<int>> &A) {
-  std::cout << "[" << std::endl;
-  for (const auto &row : A) {
-    for (const auto &elem : row) {
-      std::cout << elem << " ";
-    }
+    std::cout << "[" << std::endl;
+    for (const auto &row : A) {
+        for (const auto &elem : row) {
+            std::cout << elem << " ";
+        }
     std::cout << std::endl;
-  }
-  std::cout << "]" << std::endl;
+    }
+    std::cout << "]" << std::endl;
 }
 
 void print_vector(const std::vector<double> &v) {
-  std::cout << " [ ";
-  for (const auto &elem : v) {
-    std::cout << elem << " ";
-  }
-  std::cout << "]" << std::endl;
+    std::cout << " [ ";
+    for (const auto &elem : v) {
+        std::cout << elem << " ";
+    }
+    std::cout << "]" << std::endl;
 }
 
 void print_matrix(const std::vector<std::vector<double>> &A) {
-  std::cout << "[" << std::endl;
-  for (const auto &row : A) {
-    for (const auto &elem : row) {
-      std::cout << elem << " ";
-    }
-    std::cout << std::endl;
-  }
-  std::cout << "]" << std::endl;
+    std::cout << "[" << std::endl;
+    for (const auto &row : A) {
+        for (const auto &elem : row) {
+            std::cout << elem << " ";
+            }
+        std::cout << std::endl;
+        }
+    std::cout << "]" << std::endl;
 }
 
 template <typename T>

@@ -2,16 +2,16 @@
 #include <algorithm>    // std::swap
 
 // Recursive
-/*int gcd(int a, int b){
+int gcd_recursive(int a, int b){
     if (b == 0){
         return a;
     } else {
         return gcd(b, a%b);
     }
-}*/
+}
 
 // Iterative
-/*int gcd(int a, int b){
+int gcd_iterative(int a, int b){
     int c = 0;
     while (b != 0){
         c = a%b;
@@ -19,10 +19,10 @@
         b = c;
     }
     return a;
-}*/
+}
 
 // Iterative with no temporary var
-int gcd(int a, int b){
+int gcd_iterative2(int a, int b){
     int c = 0;
     while (b != 0){
         std::swap(a,b);
@@ -45,8 +45,9 @@ int main(){
     std::cin.ignore();
 
     // Compute the Greatest Common Divisor
-    int c = gcd(a, b);
+    std::cout << "gcd recursive: " << gcd_recursive(a, b) << endl;
+    std::cout << "gcd iterative: " << gcd_iterative(a, b) << endl;
+    std::cout << "gcd iterative2: " << gcd_iterative2(a, b) << endl;
 
-    std::cout << "GCD=" << c << "\n";
     return 0;
 }
