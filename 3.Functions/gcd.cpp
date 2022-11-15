@@ -6,7 +6,7 @@ int gcd_recursive(int a, int b){
     if (b == 0){
         return a;
     } else {
-        return gcd(b, a%b);
+        return gcd_recursive(b, a%b);
     }
 }
 
@@ -45,9 +45,9 @@ int main(){
     std::cin.ignore();
 
     // Compute the Greatest Common Divisor
-    std::cout << "gcd recursive: " << gcd_recursive(a, b) << endl;
-    std::cout << "gcd iterative: " << gcd_iterative(a, b) << endl;
-    std::cout << "gcd iterative2: " << gcd_iterative2(a, b) << endl;
+    std::cout << "gcd recursive: " << gcd_recursive(a, b) << std::endl;
+    std::cout << "gcd iterative: " << gcd_iterative(a, b) << std::endl;
+    std::cout << "gcd iterative2: " << gcd_iterative2(a, b) << std::endl;
 
     return 0;
 }
